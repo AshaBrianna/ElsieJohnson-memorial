@@ -101,31 +101,36 @@
 			<article id="contact">
 				<h2 class="major">Contact</h2>
 				<form method="post" action="#">
+					<div class="field">
+							<strong> Email all photos to email@gmail.com </strong> When sharing content, please specify whether we have your permission to add it to this site.
+							If you are requesting to receive memorial service information when available, please include the anticipated size of your party.
+					</div>
+					<br>
 					<div class="fields">
 						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" placeholder="Enter your full name..." />
+							<label for="name">Full Name</label>
+							<input type="text" name="name" id="name" placeholder="Enter your full name..." required/>
+						</div>
+						<div class="field half">
+							<label for="connection">Relation</label>
+							<input type="text" name="connection" id="connection" placeholder="Your connection to Elsie..." required/>
 						</div>
 						<div class="field half">
 							<label for="email">Email</label>
-							<input type="text" name="email" id="email" placeholder="email@gmail.com" />
+							<input type="text" name="email" id="email" placeholder="email@gmail.com" required/>
 						</div>
-						<div class="field">
-							<label for="category">Category</label>
-							<select name="category" id="demo-category">
+						<div class="field half">
+							<label for="category">Topic of Inquiry</label>
+							<select name="category" id="demo-category" required>
 										<option value="">-</option>
-										<option value="1">Get Added to Memorial Service Contact List</option>
-										<option value="1">Share Photo an/or Story</option>
+										<option value="1">Join Memorial Service Contact List</option>
+										<option value="1">Share Story or Memory</option>
 										<option value="1">Other</option>
 							</select>
 						</div>
-						<div class="field half">
-							<input type="checkbox" id="copy" name="copy">
-							<label for="copy">Email me a copy</label>
-						</div>
 						<div class="field">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" placeholder="Enter your message..." rows="6"></textarea>
+							<textarea name="message" id="message" placeholder= "Thank you for helping us to preserve Elsie's memory." rows="6" required></textarea>
 						</div>
 					</div>
 					<div>
