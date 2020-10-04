@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+@import url("https://fonts.googleapis.com/css?family=Cardo");
 
 html, body, div, span, applet, object,
 iframe, h1, h2, p, blockquote,
@@ -1454,4 +1454,51 @@ body.is-preload #footer {
   letter-spacing: 5px;
   margin: 10px 0 0 0;
   font-weight: normal;
+}
+
+/* Memories */
+body.memory {
+	font-family: Cardo;
+	background: #fffdf5;
+	color: #3f3f5a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+div.memory {
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+}
+
+div.memory:before,
+div.memory:after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+div.memory:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+div.memory:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+
+cite.memory {
+	line-height: 3;
+	text-align: right;
 }
