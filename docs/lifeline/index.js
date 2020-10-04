@@ -26,7 +26,7 @@
             selectors.item.removeClass(selectors.activeClass);
             $(this).addClass(selectors.activeClass);
           }
-        
+
       });
     });
 
